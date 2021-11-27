@@ -1,0 +1,20 @@
+{
+  "name": "yad2-searcher",
+  "version": "1.0.0",
+  "description": "",
+  "main": "handler.js",
+  "scripts": {
+    "search": "mocha src/test/functions/searchFunctionTest.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Noam Levy",
+  "license": "ISC",
+  "devDependencies": {},
+  "dependencies": {
+    "aws-sdk": "^2.462.0",
+    "axios": "^0.20.0",
+    "nyc": "^15.1.0",
+    "serverless-mocha-plugin": "^1.12.0",
+    "sib-api-v3-sdk": "^8.1.0"
+  }
+}
