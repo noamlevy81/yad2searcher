@@ -1,4 +1,4 @@
 variable "lambda_fire_interval" {
-  default = 30
+  default = 15
   type = number
 }

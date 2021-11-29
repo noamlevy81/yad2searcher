@@ -69,12 +69,12 @@ module.exports.searchData = [
     name: 'פתח תקווה עין גנים',
     city: '7900',
     neighborhood: '763',
-    rooms: '4'
+    rooms: '4-4'
   },
   {
     name: 'פתח תקווה מרכז',
     city: '7900',
     neighborhood: '2001001',
-    rooms: '4'
+    rooms: '4-4'
   },
 ]

@@ -14,6 +14,7 @@ const search = async (city, neighborhood, name, rooms, filesDir) => {
           }
         })
 
+      console.log(res)
       await filesManager.write(JSON.stringify(res.data.feed.feed_items), `${filesDir}/${name}.json`)
 
       const filteredResults = filterResults(res)
