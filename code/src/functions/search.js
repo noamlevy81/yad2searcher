@@ -25,7 +25,10 @@ module.exports.search = async (event, context, callback) => {
     .filter(x => !oldResults.includes(x))
 
   if (deltaBetweenOldToCurrentResults.length > 0) {
-    await telegramSender.send(convertIdsToLinks(deltaBetweenOldToCurrentResults).join(', '))
+    const telegramMessagePrefix = '\nהיי! מצאתי את הדירות הבאות:'
+
+
+    await telegramSender.send(telegramMessagePrefix + convertIdsToLinks(deltaBetweenOldToCurrentResults).join('\n'))
   } else {
     console.log('I didn\'t find anything new')
   }
